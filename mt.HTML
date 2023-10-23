@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bluetooth Text Transfer</title>
+</head>
+<body>
+
+<h1>Transfer Text over Bluetooth</h1>
+<button onclick="sendTextOverBluetooth()">Send Text</button> <script>
+function sendTextOverBluetooth() { fetch("http:// 157.48.114.22/send_text") .then(response => response.text()) .then(data => alert(data))
+}
+.catch(error => alert("Error: " + error));
+</script>
+</body>
+</html>
